@@ -1,0 +1,60 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------- NavBar -------------- */
+
+.logo-mercado-liebre{
+    width: 150px;
+}
+
+.logo-buscador-texto{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -16rem;
+    margin-right: -13.5rem;
+    margin-bottom: 1rem;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.no-bullet{
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-item{
+    margin-right: 1.5rem;
+}
+
+.global-navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -0.7rem;
+}
+
+.input-buscador{
+    width: 20rem;
+    height: 2rem;
+}
+
+.btn-lupa{
+    height: 2rem;
+    width: 2.5rem;
+}
+
+.margin-right-icon{
+    margin-right: 0.5rem;
+}
