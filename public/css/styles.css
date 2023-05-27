@@ -1,8 +1,14 @@
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
-/* -------------- NavBar -------------- */
+header {
+    background-color: #EAC926;
+    margin: 0;
+}
+
+/* ------------------------------------------ NavBar --------------------------------------------- */
 
 .logo-mercado-liebre{
     width: 150px;
@@ -10,20 +16,26 @@ body{
 
 .logo-buscador-texto{
     display: flex;
-    justify-content: space-evenly;
-    margin-left: -16rem;
-    margin-right: -13.5rem;
+    justify-content: space-between;
+    margin-left: 2rem;
     margin-bottom: 1rem;
+    padding-top:  0.5rem;
 }
 
 .buscador{
     display: flex;
     align-items: center;
+    margin-right: 15rem;
 }
 
 .icon-text{
     display: flex;
     align-items: center;
+    margin-right: 5rem;
+}
+
+.media-input-text{
+    display: flex;
 }
 
 .no-bullet{
@@ -33,6 +45,7 @@ body{
 .navbar {
     display: flex;
     flex-direction: row;
+    background-color: #EAC926;
 }
 
 .navbar-item{
@@ -57,4 +70,129 @@ body{
 
 .margin-right-icon{
     margin-right: 0.5rem;
+}
+
+.menu{
+    padding: 0.5rem;
+    background-color: #1259c3;     
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.global-menu{
+    display: none;
+}
+
+@media (max-width: 1250px ){
+    .input-buscador{
+        width: 11rem;
+    }
+}
+
+@media (max-width: 1090px ){
+    .input-buscador{
+        width: 21.5rem;
+    }
+
+    .icon-text {
+        margin-right: 4.8rem;
+    }
+
+    .buscador {
+        margin-right: 2.5rem;
+    }
+
+    .logo-buscador-texto{
+        display: block;
+    }
+    .logo-mercado-liebre {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .media-input-text {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 850px ){
+
+    .icon-text {
+        margin-right: 1rem;
+    }
+
+    .global-menu{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .global-navbar{
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .media-input-text {
+        display: block;
+    }
+
+    .input-buscador{
+        width: 20rem;
+    }
+
+    .logo-buscador-texto{
+        display: grid;
+        justify-content: center;
+    }
+
+    .logo-mercado-liebre{
+        display: flex;
+        margin-left: 6rem;
+    }
+
+    .icon-text {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 450px ){
+    .input-buscador{
+        width: 15rem;
+    }
+
+    .logo-mercado-liebre {
+        margin-left: 3rem;
+    }
+
+    .icon-text {
+        margin-left: -1rem;
+    }
+}
+
+@media (max-width: 355px ){
+    .input-buscador{
+        width: 14rem;
+    }
+
+    .logo-mercado-liebre {
+        margin-left: 3.2rem;
+    }
+
+    .icon-text {
+        margin-left: -1rem;
+        margin-left: 0.5rem;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    p{
+        margin-block-end: 0;
+    }
+
 }
