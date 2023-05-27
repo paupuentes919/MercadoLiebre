@@ -281,4 +281,49 @@ header {
         box-shadow: none;
     }
 
+    .titulo-item{
+        display: none;
+    }
+
+}
+
+/* ------------------------------------------ Footer --------------------------------------------- */
+
+.contenedor-footer{
+    display: table-cell;
+}
+
+.icon-footer{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.icon-footer-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footer-description{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 740px) {
+    .contenedor-footer{
+        display: block;
+    }
 }
