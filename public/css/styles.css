@@ -341,6 +341,74 @@ header {
 
 }
 
+/* ------------------------------------------ LOGIN ---------------------------------------------------------------------------*/
+/* ------------------------------------------ Main --------------------------------------------- */
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+    column-gap: 8rem;
+}
+
+.text-login-mercado-liebre{
+    font-weight: 600;
+    max-width: 18rem;
+}
+
+.user-login, .contrasena-login{
+    display: grid;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.text-details-login{
+    border: 1px solid #1112;
+    border-radius: 6px;
+}
+
+.buttons-container-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    column-gap: 5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 850px){
+    .login-container{
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+    .login-container {
+        display: grid;
+    }
+
+    .text-login {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 370px){
+    .user-login{
+        display: flex;
+        justify-content: center;
+    }
+
+    .user-login, .contrasena-login{
+        margin: 2rem;
+    }
+
+    .text-login-mercado-liebre {
+        max-width: 14rem;
+    }
+}
+
 /* ------------------------------------------ REGISTER ------------------------------------------------------------------------*/
 /* ------------------------------------------ Main --------------------------------------------- */
 #background-register{
