@@ -34,13 +34,13 @@
     <header>
       <nav>
         <div class="logo-buscador-texto">
-            <a href="/">
-                <img
-                  src="img/logo-mercado-liebre.svg"
-                  class="logo-mercado-liebre"
-                  alt="logo de mercado liebre"
-                />
-            </a>
+          <a href="/">
+            <img
+              src="img/logo-mercado-liebre.svg"
+              class="logo-mercado-liebre"
+              alt="logo de mercado liebre"
+            />
+          </a>
           <div class="media-input-text">
             <form class="buscador">
               <input
@@ -59,43 +59,46 @@
             </div>
           </div>
         </div>
-        <div class="global-navbar">
-          <ul class="no-bullet navbar">
-            <li class="navbar-item">Ofertas</li>
-            <li class="navbar-item">Tiendas Oficiales</li>
-            <li class="navbar-item">Vender</li>
-            <li class="navbar-item">Ayuda</li>
-          </ul>
-          <ul class="no-bullet navbar">
-            <li class="navbar-item">
+        <div class="nav-flex">
+          <input type="checkbox" class="global-menu" id="navbar-toggle" />
+          <label for="navbar-toggle" class="navbar-toggle-label"
+            ><i class="fa-solid fa-bars menu"></i
+          ></label>
+          <div class="global-navbar">
+            <ul class="no-bullet navbar">
+              <li class="navbar-item">Ofertas</li>
+              <li class="navbar-item">Tiendas Oficiales</li>
+              <li class="navbar-item">Vender</li>
+              <li class="navbar-item">Ayuda</li>
+            </ul>
+            <ul class="no-bullet navbar">
+              <li class="navbar-item">
                 <a href="/register" class="link">
                   <i class="fa-solid fa-id-card margin-right-icon"></i>Crea tu
                   cuenta
                 </a>
-            </li>
-            <li class="navbar-item">
+              </li>
+              <li class="navbar-item">
                 <a href="/login" class="link">
                   <i
                     class="fa-solid fa-arrow-right-to-bracket margin-right-icon"
                   ></i
                   >Ingresa
                 </a>
-            </li>
-            <li class="navbar-item">
+              </li>
+              <li class="navbar-item">
                 <i class="fa-solid fa-basket-shopping margin-right-icon"></i>Mis
                 compras
-            </li>
-          </ul>
-        </div>
-        <div class="global-menu">
-          <i class="fa-solid fa-bars menu"></i>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <!--------------------------------------------- MAIN ------------------------------------------------------------------->
     <main id="background-register">
         <div class="container-register">
-            <form class="">
+            <form>
                 <div class="nombre-apellido-container">
                     <div class="nombre-apellido">
                         <label for="nombre">Nombre</label>
