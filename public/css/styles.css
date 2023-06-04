@@ -85,6 +85,14 @@ header {
     display: none;
 }
 
+.link{
+    text-decoration: none;
+}
+
+.link:visited{
+    color: black;
+}
+
 @media (max-width: 1250px ){
     .input-buscador{
         width: 11rem;
@@ -197,6 +205,7 @@ header {
 
 }
 
+/* ------------------------------------------ HOME ------------------------------------------------------------------------*/
 /* ------------------------------------------ Main --------------------------------------------- */
 
 #background {
@@ -328,6 +337,183 @@ header {
 
     .titulo-item:hover{
         display: unset;
+    }
+
+}
+
+/* ------------------------------------------ REGISTER ------------------------------------------------------------------------*/
+/* ------------------------------------------ Main --------------------------------------------- */
+#background-register{
+    background-color: #ebebeb;
+    padding: 3rem 0;
+}
+
+.container-register{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+}
+
+.nombre-apellido-container, .user-email-container, .fecha-domicilio-container, .contrasena-container{
+    display: flex;
+    margin-top: 3rem;
+    column-gap: 5rem;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    column-gap: 5rem;
+}
+
+.nombre-apellido, .user-email, .fecha-domicilio, .contrasena {
+    display: grid;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.perfil-usuario-contenedor, .categorias-interes-contenedor, .imagen-contenedor{
+    margin-top: 3rem;
+}
+
+.perfil-usuario, .categorias-interes, .foto{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    column-gap: 5rem;
+}
+
+.input-details{
+    width: 20rem;
+    height: 2rem;
+}
+
+.btn-form{
+    display: inline-block;
+    color: white;
+    background-color: #1259c3;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 24px;
+    text-align: center;
+    height: 48px;
+    border-color: transparent;
+}
+
+.link-submit{
+    text-decoration: none;
+}
+
+.link-submit:visited{
+    color: white;
+}
+
+@media (max-width: 950px){
+    .nombre-apellido-container, .user-email-container, .fecha-domicilio-container, .contrasena-container{
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 900px){
+    .nombre-apellido-container, .user-email-container, .fecha-domicilio-container, .contrasena-container{
+        display: grid;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .container-register{
+        padding-top: 3rem;
+    }
+
+    .nombre-apellido, .user-email, .fecha-domicilio, .contrasena{
+        padding-bottom: 1rem;
+    }
+
+    .perfil-usuario-contenedor, .categorias-interes-contenedor, .imagen-contenedor{
+        justify-content: center;
+    }
+
+    .perfil-label{
+        display: grid;
+        justify-content: center;
+        margin-right: 14.5rem;
+    }
+
+    .interes-label{
+        display: grid;
+        justify-content: center;
+        margin-right: 10.9rem;
+    }
+
+    .foto-label{
+        display: grid;
+        justify-content: center;
+        margin-right: 13rem;
+    }
+
+    .categorias-interes{
+        display: grid;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 450px){
+    .input-details{
+        width: 15rem;
+    }
+
+    .perfil-label {
+        margin-right: 9.7em;
+    }
+
+    .perfil-usuario{
+        display: grid;
+    }
+
+    .interes-label{
+        margin-right: 6.5rem;
+    }
+
+    .categorias-interes{
+        justify-content: center;
+    }
+
+    .foto-label {
+        margin-right: 8.9rem;
+    }
+}
+
+@media (max-width: 370px){
+    .input-details{
+        width: 12rem;
+    }
+
+    .perfil-label {
+        margin-right: 6em;
+    }
+
+    .interes-label {
+        margin-right: 2.5rem;
+    }
+
+    .foto-label {
+        margin-right: 4.6rem;
+    }
+
+    .input-foto{
+        margin-left: 4rem;
+    }
+
+    .buttons-container {
+        display: grid;
+        gap: 2rem;
     }
 
 }

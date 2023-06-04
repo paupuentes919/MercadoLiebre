@@ -9,6 +9,10 @@ app.get('/', (req,res) =>{
     res.sendFile((__dirname + '/views/home.html')); 
 });
 
+app.get('/register', (req,res) =>{
+    res.sendFile((__dirname + '/views/register.html')); 
+});
+
 app.get('*', (req,res) =>{
     res.send("Ruta no encontrada"); 
 });
